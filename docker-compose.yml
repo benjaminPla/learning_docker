@@ -1,0 +1,13 @@
+version: '3'
+services:
+  learning_docker:
+    build: .
+    ports:
+      - '4001:4001'
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    # environment:
+    #   - PORT=4001
+    # env.file:
+    #   - ./.env
